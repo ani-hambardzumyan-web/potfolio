@@ -1,0 +1,569 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+  font-family: Helvetica-Black;
+  src : url("Fonts/Helvetica-Black.otf");
+}
+@font-face {
+  font-family: KozGoPr6N-Heavy;
+  src : url("Fonts/KozGoPr6N-Heavy.otf");
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src : url("Fonts/Montserrat-Medium.otf");
+}
+@font-face {
+  font-family: InaiMathi;
+  src : url("Fonts/InaiMathi.ttf");
+}
+@font-face {
+  font-family: Lato-Regular;
+  src : url("Fonts/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: Neutra_Display;
+  src : url("Fonts/Neutra Display Titling.ttf");
+}
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6{
+  color:rgb(56, 98, 142);
+}
+a{
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+body{
+  color:#000000;
+  font-family:Helvetica-Black,sans-serif;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+.wrapper{
+  overflow: hidden;
+}
+.d_flex{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+}
+.j_c_between{
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.j_c_center{
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.j_c_end{
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.a_i_center{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.a_i_end{
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.a_i_start{
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+
+
+
+/*-- START HOME PAGE--*/
+.home_page{
+  background: url(img/blur-car-key-close-up-6097.jpg) center/cover no-repeat;
+  height: 100vh;
+}
+
+.entry_form{
+  max-width: 447px;
+  margin-right: 48px;
+  text-align: center;
+  font-size: 18px;
+  font-family: KozGoPr6N-Heavy, sans-serif ;
+}
+.entry_form form{
+  background: rgb(56, 99, 142);
+  border-radius:22px;
+  padding:60px 60px 48px;
+}
+.logo{
+  max-width: 100%;
+  margin-bottom: -41px;
+  position: relative;
+}
+.logo img{
+  width: 210px;
+  max-width: 100%;
+  display: block;
+  margin:0 auto;
+}
+.form-group1 {
+  margin-bottom: 25px;
+  text-align:center;
+}
+.form-group1 label{
+  display: inline-block;
+  color:#ffffff;
+}
+.form-control1 {
+  display: block;
+  width: 326px;
+  max-width: 100%;
+  height: 48px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  outline: none;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition-property: border-color, box-shadow, -webkit-box-shadow;
+  transition-duration: 0.15s, 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s, 0s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+.btn1{
+  font-family: inherit;
+  display: inline-block;
+  margin: 15px 0 0 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  background:rgb(251, 249, 249);;
+  border: 1px solid transparent;
+  padding: 6px 67px;
+  font-size: 18px;
+  color:rgb(139, 129, 129);
+  line-height: 1.42857143;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*-- END HOME PAGE--*/
+
+
+
+/*-- START SELECT AREA PAGE--*/
+.header{
+  max-width:100%;
+  position: relative;
+  margin: 18px 0 9%;
+}
+.header>img{
+  position: absolute;
+  left:0;
+  top:0;
+  pointer-events: none;
+  z-index: 0;
+
+}
+.header a{
+  position: relative;
+  font-family: Neutra_Display, sans-serif;
+  display: inline-block;
+  margin-top: 2%;
+  text-transform: uppercase;
+  font-size: 34px;
+  color:rgb(56, 99, 142);
+  z-index: 1;
+}
+.header a:first-of-type{
+  margin-left: 45px;
+}
+.header a:last-of-type{
+  margin-right: 50px;
+}
+.select_area{
+  text-align: center;
+  margin-top: 43px;
+}
+.content h2{
+  font-size: 29px;
+  color:rgb(56, 98, 142);
+  display: inline-block;
+  margin-bottom: 37px;
+}
+.select_each{
+  max-width: 292px;
+  margin: 0 33px;
+  padding: 24px 40px 30px;
+  text-align: center;
+  background: rgb(218, 218, 218);
+  border-radius: 23px;
+  flex-direction: column;
+}
+.select_each .img{
+  width: 110px;
+  display: inline-block;
+}
+.select_each h3{
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  line-height: 1.3;
+  margin-top: 17px;
+}
+.select_each p{
+  font-size: 17px;
+  margin-top: 23px;
+  color:rgb(4, 4, 4);
+  font-family: Montserrat-Medium, sans-serif;
+  line-height: 1.1;
+}
+.select_button{
+  display: inline-block;
+  font-size: 19px;
+  margin-top: 20px;
+  color:rgb(139, 129, 129);
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  background: rgb(251, 249, 249);
+  border:1px solid transparent;
+  padding: 1px 66px;
+}
+.select_button:hover{
+  color:rgba(139, 129, 129, 0.5);
+  border-color: rgb(139, 129, 129);
+  background: rgb(255, 255, 255);
+}
+/*-- END SELECT AREA PAGE--*/
+
+
+
+/*-- START OUT OF TOWN PAGE--*/
+/*-- START WITHIN METRO MANILA PAGE --*/
+.out_of_town_page {
+  background: rgb(234, 233, 233) url(img/bg_for_booking_page.jpg) bottom -80px right -140px/ 470px no-repeat;
+}
+.within_metro_page{
+  background: rgb(234, 233, 233);
+}
+.out_of_town{
+  font-family: InaiMathi, sans-serif;
+  margin-top: 44px;
+  padding-bottom:90px;
+}
+.out_of_town form{
+  width:70%;
+  padding-left: 30px;
+}
+.out_of_town .book_now{
+  width:30%;
+  padding-right: 30px;
+}
+.out_of_town .form-group1{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 13px;
+}
+.out_of_town .form_group1.comment{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.out_of_town .form-control1{
+  width: 283px;
+  height: 43px;
+  border-color: transparent;
+}
+.out_of_town .form_group1.comment .form-control1{
+  max-width: 283px;
+  height: auto;
+}
+.out_of_town .form-group1 label{
+  margin-right: 15px;
+  text-transform: uppercase;
+  color:#000000;
+}
+.out_of_town h4{
+  text-align: right;
+  margin: 17px 71px 12px 0;
+  font-family: inherit;
+  color:#000000;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.out_of_town .col2 h4{
+  margin-top: -15px;
+}
+.book_now{
+  padding:62px 0 0 55px;
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  text-align: center;
+}
+.book_now>div{
+  text-align: center;
+  border-radius:22px;
+  background: rgb(204, 203, 201);
+  padding:9px 14px 27px;
+}
+.book_now h6{
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  color:rgb(56, 99, 142);
+  font-size: 15px;
+  margin-bottom: 19px;
+}
+.btn2{
+  background: rgb(56, 99, 142);
+  border-radius: 15px;
+  font-size: 15px;
+  color:#ffffff;
+  border:none;
+  padding: 16px 85px;
+  font-weight: 900;
+}
+.book_now a{
+  margin-top: 40px;
+  text-transform: uppercase;
+  display: inline-block;
+  background: rgb(56, 99, 142);
+  color:#ffffff;
+  font-size: 18px;
+  padding: 2px 44px;
+}
+.out_of_town select.form-control1{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.form-group1.select{
+  position: relative;
+}
+.form-group1.select:after {
+  content: "";
+  width: 28px;
+  height: 2px;
+  background: #999595;
+  position: absolute;
+  z-index: 5;
+  right: 15px;
+  top: 15px;
+  pointer-events: none;
+}
+.form-group1.select:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 14px 0 14px;
+  border-color: #999595 transparent transparent transparent;
+  position: absolute;
+  z-index: 5;
+  right: 15px;
+  top: 18px;
+  pointer-events: none;
+}
+/*-- END WITHIN METRO MANILA PAGE --*/
+/*-- END OUT OF TOWN PAGE --*/
+
+
+
+/*-- START SELECT VEHICLE TYPE PAGE --*/
+.select_vehicle_type_page{
+
+}
+.content{
+  text-align: center;
+}
+.select_vehicle_each{
+  max-width: 293px;
+  text-align: center;
+  background: rgb(218, 218, 218);
+  margin: 0 10px;
+  border-radius: 23px;
+  padding: 44px 18px 36px;
+  /*flex-direction: column;*/
+
+}
+.select_vehicle_each .img img{
+  height: 63px;
+}
+.car_type{
+  margin: 22px 0;
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  font-size: 22px;
+  color:rgb(56, 98, 142);
+}
+.select_vehicle_each p{
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  font-size: 17px;
+  color:rgb(4, 4, 4);
+  line-height: 1.3;
+  min-height: 76px;
+}
+/*-- END SELECT VEHICLE TYPE PAGE --*/
+
+
+
+/*-- START CONTACT PAGE --*/
+.contact{
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  max-width: 590px;
+  background: url(img/bg_contact_page.png) center/cover no-repeat;
+  margin: 0 auto 99px;
+  padding: 15px 55px 90px 30px;
+  color:#ffffff;
+}
+.contact a{
+  color:#ffffff;
+}
+.contact h3{
+  color:#ffffff;
+  font-size: 25px;
+}
+.contact>div{
+  margin-top: 25px;
+  padding-right: 80px;
+}
+.contact>div *{
+  line-height: 1.66;
+}
+.contact div>div{
+  width:50%;
+  text-align: right;
+  font-size: 18px;
+}
+.contact>div>span{
+  font-size: 18px;
+}
+.contact div>p:first-of-type{
+  margin-right: -3px;
+}
+.contact>div.complaints{
+  margin-top: 60px;
+}
+.contact>div.email_us{
+  margin-top: 60px;
+  padding-right: 0;
+}
+/*-- END CONTACT PAGE --*/
+
+
+
+
+/*-- START THANKS PAGE --*/
+.thanks_page{
+  background: url(img/bg_for_sucess_booking.png) bottom/93% no-repeat;
+}
+.thanks{
+  font-family: Montserrat-Medium, sans-serif;
+  max-width: 575px;
+  margin: 55px auto 188px;
+  font-size: 20px;
+}
+.thanks .img{
+  width:171px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+/*-- END THANKS PAGE --*/
+
+
+/*-- START SAFE SHUTTLE PAGE --*/
+.safe_shuttle{
+  font-family: Lato-Regular, sans-serif;
+  position: relative;
+}
+.safe_shuttle div{
+  width:50%;
+  text-align: center;
+  background: #ffffff;
+}
+.content .left_title{
+  max-width: 364px;
+  margin-left: 99px;
+}
+.content .left_title h3{
+  font-size: 60px;
+  font-weight: 100;
+  color:#000000;
+  line-height: 1.3;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  text-align: left;
+  margin-top: 66px;
+}
+.left_title a{
+  font-family: KozGoPr6N-Heavy, sans-serif;
+  font-size: 29px;
+  display: inline-block;
+  color:#ffffff;
+  background: rgb(56, 98, 142);
+  padding:2px 69px;
+  text-transform: uppercase;
+  margin-top: 33px;
+}
+.safe_shuttle div.safe_shuttle_desc{
+  position: absolute;
+  bottom:9px;
+  left:50%;
+  transform: translateX(-50%);
+  width:90%;
+  background: rgb(251, 249, 249);
+  padding:18px 38px 19px 50px;
+  border-radius: 12px;
+  font-size: 20px;
+}
+/*-- END SAFE SHUTTLE PAGE --*/
+
+
+
+/*-- START FOOTER--*/
+footer{
+  margin-top: 70px;
+  height: 80px;
+  width:100%;
+  background: rgb(56, 99, 142);
+}
+/*-- END FOOTER--*/
