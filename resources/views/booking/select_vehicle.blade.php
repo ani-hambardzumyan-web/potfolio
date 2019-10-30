@@ -7,7 +7,7 @@
 
         <div class="header d_flex j_c_between a_i_start">
             <a href="{{url('/about')}}">home</a>
-            <img src="img/logo_with_header_tab2.png" alt="logo_with">
+            <img src="../img/logo_with_header_tab2.png" alt="logo_with">
             <a href="{{url('/contact')}}">contact us</a>
         </div>
 
@@ -18,7 +18,7 @@
 
                     <div class="select_vehicle_each">
                         <div class="img">
-                            <img src="img/sedan_icon.png" alt="sedan_icon">
+                            <img src="../img/sedan_icon.png" alt="sedan_icon">
                         </div>
                         <div class="discription">
                             <div class="car_type">SEDAN</div>
@@ -26,12 +26,17 @@
                                 business meetings / airport
                                 pick-ups.
                             </p>
-                            <a class= 'select_button' href="{{url('/area')}}">select</a>
+                            <form action="/booking/select_vehicle" method="POST">
+                                @method('POST')
+                                @csrf
+                                <input type="hidden" name="vehicle" value="SEDAN">
+                                <button type="submit" class= 'select_button'>select</button>
+                            </form>
                         </div>
                     </div>
                     <div class="select_vehicle_each">
                         <div class="img">
-                            <img src="img/SUV_icon.png" alt="SUV_icon">
+                            <img src="../img/SUV_icon.png" alt="SUV_icon">
                         </div>
                         <div class="discription">
                             <div class="car_type">SUV</div>
@@ -39,31 +44,46 @@
                                 business meetings / airport
                                 pick-ups.
                             </p>
-                            <a class= 'select_button' href="{{url('/area')}}">select</a>
+                            <form action="/booking/select_vehicle" method="POST">
+                                @method('POST')
+                                @csrf
+                                <input type="hidden" name="vehicle" value="SUV">
+                                <button type="submit" class= 'select_button'>select</button>
+                            </form>
                         </div>
                     </div>
                     <div class="select_vehicle_each">
                         <div class="img">
-                            <img src="img/pickup_icon.png" alt="pickup_icon">
+                            <img src="../img/pickup_icon.png" alt="pickup_icon">
                         </div>
                         <div class="discription">
                             <div class="car_type">PICK-UP</div>
                             <p>Good up to 3 - 4 with extra cabin
                                 at the back.
                             </p>
-                            <a class= 'select_button' href="{{url('/area')}}">select</a>
+                            <form action="/booking/select_vehicle" method="POST">
+                                @method('POST')
+                                @csrf
+                                <input type="hidden" name="vehicle" value="PICK-UP">
+                                <button type="submit" class= 'select_button'>select</button>
+                            </form>
                         </div>
                     </div>
                     <div class="select_vehicle_each">
                         <div class="img">
-                            <img src="img/VAN_icon.png" alt="VAN_icon">
+                            <img src="../img/VAN_icon.png" alt="VAN_icon">
                         </div>
                         <div class="discription">
                             <div class="car_type">VAN</div>
                             <p>Good up to 10 - 12 people for
                                 group meeting and out of areas.
                             </p>
-                            <a class= 'select_button' href="{{url('/area')}}">select</a>
+                            <form action="/booking/select_vehicle" method="POST">
+                                @method('POST')
+                                @csrf
+                                <input type="hidden" name="vehicle" value="VAN">
+                                <button type="submit" class= 'select_button'>select</button>
+                            </form>
                         </div>
                     </div>
                 </div>

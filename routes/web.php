@@ -13,23 +13,23 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-Route::get('/vehicle', function () {
-    return view('select_vehicle');
-});
-Route::get('/town', function () {
-    return view('town_side');
-});
-Route::get('/area', function () {
-    return view('select_area');
-});
-
-
-Route::get('/thanks', function () {
-    return view('thanks');
-});
 Auth::routes();
 Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('booking/export/', 'BookingController@export');
+
+Route::get('/booking/select_vehicle', 'BookingController@selectVehicle');
+Route::post('/booking/select_vehicle', 'BookingController@postVehicle');
+
+Route::get('/booking/select_area', 'BookingController@selectArea');
+Route::post('/booking/select_area', 'BookingController@postArea');
+
+
+Route::get('/booking/details', 'BookingController@selectDetails');
+Route::post('/booking/details', 'BookingController@postDetails');
+
+Route::get('/thanks', function () {
+    return view('booking.thanks');
+});

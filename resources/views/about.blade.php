@@ -16,7 +16,7 @@
             <div class="safe_shuttle d_flex j_c_between">
                 <div class="left_title">
                     <h3>SAFE SHUTTLE SERVICE</h3>
-                    <a href="{{url('/vehicle')}}">book now</a>
+                    <a href="{{url('/booking/select_vehicle')}}">book now</a>
                 </div>
                 <div class="right_img">
                     <img src="img/Bitmap.jpg" alt="Bitmap">
