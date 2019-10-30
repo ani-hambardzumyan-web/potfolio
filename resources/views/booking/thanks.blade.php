@@ -7,14 +7,14 @@
 
         <div class="header d_flex j_c_between a_i_start">
             <a href="{{url('/about')}}">home</a>
-            <img src="img/logo_with_header_tab2.png" alt="logo_with">
+            <img src="../img/logo_with_header_tab2.png" alt="logo_with">
             <a href="{{url('/contact')}}">contact us</a>
         </div>
 
         <div class="content">
             <div class="thanks">
                 <div class="img">
-                    <img src="img/check_for_success_booking.png" alt="check_for_success">
+                    <img src="../img/check_for_success_booking.png" alt="check_for_success">
                 </div>
                 <p>
                     Thank you for booking with us! Kindly wait for your

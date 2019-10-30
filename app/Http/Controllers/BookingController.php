@@ -17,7 +17,7 @@ class BookingController extends Controller
     public function selectVehicle(Request $request)
     {
         if(empty($request->session()->get('booking'))){
-            $booking = Booking::create([]);
+            $booking = new Booking();
         }else{
             $booking = $request->session()->get('booking');
         }
@@ -33,13 +33,14 @@ class BookingController extends Controller
     {
         $data = $request->except(['_method', '_token' ]);
         if(empty($request->session()->get('booking'))){
-            $booking = Booking::create($data);
+            $booking =  new Booking();
         }else{
             $booking = $request->session()->get('booking');
 
-            $booking->vehicle = $data['vehicle'];
+//            $booking->vehicle = $data['vehicle'];
         }
 //        $request->flash();
+        $booking->fill($data);
         $request->session()->put('booking', $booking);
 
         return redirect('/booking/select_area');
@@ -68,11 +69,12 @@ class BookingController extends Controller
         $data = $request->except(['_method', '_token' ]);
 
         if(empty($request->session()->get('booking'))){
-            $booking = Booking::create($data);
+            $booking = new Booking();
         }else{
             $booking = $request->session()->get('booking');
-            $booking->within_metro_manila = $data['within_metro_manila'];
+//            $booking->within_metro_manila = $data['within_metro_manila'];
         }
+        $booking->fill($data);
         $request->session()->put('booking', $booking);
 
         return redirect('/booking/details');
@@ -105,17 +107,22 @@ class BookingController extends Controller
         $data = $request->except(['_method', '_token' ]);
 
         if(empty($request->session()->get('booking'))){
-            $booking = Booking::create($data);
+            $booking = new Booking();
         }else{
             $booking = $request->session()->get('booking');
-            $booking->fill($data);
         }
         //time to add to DB and clear session
+        $booking->fill($data);
         $booking->save();
         $request->session()->put('booking', new Booking());
         return redirect('/booking/thanks');
     }
 
+
+    public function admin()
+    {
+        return view('export');
+    }
 
     public function export()
     {
