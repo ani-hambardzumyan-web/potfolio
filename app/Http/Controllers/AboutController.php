@@ -24,9 +24,8 @@ class AboutController extends Controller
      */
     public function index()
     {
-        dd(Auth::user());
         if(Auth::user()->name === "sgsAdmin"){
-            return view('admin');
+            return view('export');
         }
         return view('about');
     }
