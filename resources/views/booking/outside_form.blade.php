@@ -38,13 +38,13 @@
                             <label for="barangay">BARANGAY:</label>
                             <input type="text" class="form-control1" id="barangay" name="pickup_barangay">
                         </div>
-                        <div class="form-group1 select">
+                        <div class="form-group1">
                             <label for="city">CITY:</label>
                             <input type="text" class="form-control1" id="barangay" name="pickup_city">
                         </div>
                         <div class="form-group1">
                             <label for="time">TIME:</label>
-                            <input type="number" min="1" max="10" class="form-control1" id="time" name="pickup_time">
+                            <input type="text"   class="form-control1" id="time" name="pickup_time">
                         </div>
                     </div>
 
@@ -58,99 +58,99 @@
                             <label for="barangay2">BARANGAY:</label>
                             <input type="text" class="form-control1" id="no_street2" name="dropoff_barangay">
                         </div>
-                        <div class="form-group1 select">
+                        <div class="form-group1">
                             <label for="city2">CITY:</label>
                             <input type="text" class="form-control1" id="barangay" name="dropoff_city">
                         </div>
                         <div class="form-group1 select">
                             <label for="province2">PROVINCCE:</label>
                             <select class="form-control1" id="province2" name="dropoff_province">
-                                <option value="Antipolo">Antipolo
+                                <option value="Antipolo">Antipolo<span style="diplay:hide">4500</span>
                                 </option>
-                                <option value="Bacoor">Bacoor
+                                <option value="Bacoor">Bacoor<span class="hidden">4500</span>
                                 </option>
-                                <option value="Batangas">Batangas
+                                <option value="Batangas">Batangas<span class="hidden">4500</span>
                                 </option>
-                                <option value="Binan">Binan
+                                <option value="Binan">Binan<span class="hidden">4500</span>
                                 </option>
-                                <option value="Cabuyao">Cabuyao
+                                <option value="Cabuyao">Cabuyao<span class="hidden">4500</span>
                                 </option>
-                                <option value="Calamba">Calamba
+                                <option value="Calamba">Calamba<span class="hidden">5000</span>
                                 </option>
-                                <option value="Cavita">Cavita
+                                <option value="Cavita">Cavita<span class="hidden">4000</span>
                                 </option>
-                                <option value="Dasmarinas">Dasmarinas
+                                <option value="Dasmarinas">Dasmarinas<span class="hidden">3000</span>
                                 </option>
-                                <option value="General Trias">General Trias
+                                <option value="General Trias">General Trias<span class="hidden">3000</span>
                                 </option>
-                                <option value="Imus">Imus
+                                <option value="Imus">Imus<span class="hidden">3500</span>
                                 </option>
-                                <option value="Lipa">Lipa
+                                <option value="Lipa">Lipa<span class="hidden">4500</span>
                                 </option>
-                                <option value="Lucena">Lucena
+                                <option value="Lucena">Lucena<span class="hidden">4500</span>
                                 </option>
-                                <option value="San Pablo">San Pablo
+                                <option value="San Pablo">San Pablo<span class="hidden">5000</span>
                                 </option>
-                                <option value="San Pedro">San Pedro
+                                <option value="San Pedro">San Pedro<span class="hidden">4500</span>
                                 </option>
-                                <option value="Santa Rosa">Santa Rosa
+                                <option value="Santa Rosa">Santa Rosa<span class="hidden">4500</span>
                                 </option>
-                                <option value="Sto tomas">Sto tomas
+                                <option value="Sto tomas">Sto tomas<span class="hidden">4500</span>
                                 </option>
-                                <option value="Tagaytay">Tagaytay
+                                <option value="Tagaytay">Tagaytay<span class="hidden">5000</span>
                                 </option>
-                                <option value="Tanauan">Tanauan
+                                <option value="Tanauan">Tanauan<span class="hidden">4500</span>
                                 </option>
-                                <option value="Trece Martires">Trece Martires
+                                <option value="Trece Martires">Trece Martires<span class="hidden">4500</span>
                                 </option>
-                                <option value="Candelaria">Candelaria
+                                <option value="Candelaria">Candelaria<span class="hidden">7000</span>
                                 </option>
-                                <option value="Tiaong">Tiaong
+                                <option value="Tiaong">Tiaong<span class="hidden">7000</span>
                                 </option>
-                                <option value="Lucena">Lucena
+                                <option value="Lucena">Lucena<span class="hidden">8000</span>
                                 </option>
-                                <option value="Tayabas">Lucena
+                                <option value="Tayabas">Lucena<span class="hidden">8000</span>
                                 </option>
-                                <option value="Lopez">Lopez
+                                <option value="Lopez">Lopez<span class="hidden">8000</span>
                                 </option>
 
 
 
-                                <option value="Bulacan">Bulacan
+                                <option value="Bulacan">Bulacan<span class="hidden">5000</span>
                                 </option>
-                                <option value="Meycuayan">Meycuayan
+                                <option value="Meycuayan">Meycuayan<span class="hidden">3500</span>
                                 </option>
-                                <option value="Malolos">Malolos
+                                <option value="Malolos">Malolos<span class="hidden">3500</span>
                                 </option>
-                                <option value="Gulacan">Gulacan
+                                <option value="Gulacan">Gulacan<span class="hidden">5000</span>
                                 </option>
-                                <option value="San Rafael">San Rafael
+                                <option value="San Rafael">San Rafael<span class="hidden">5000</span>
                                 </option>
-                                <option value="San Idelfonso">San Idelfonso
+                                <option value="San Idelfonso">San Idelfonso<span class="hidden">5000</span>
                                 </option>
-                                <option value="San Miguel">San Miguel
+                                <option value="San Miguel">San Miguel<span class="hidden">5000</span>
                                 </option>
-                                <option value="Nueva Ecija">Nueva Ecija
+                                <option value="Nueva Ecija">Nueva Ecija<span class="hidden">6000</span>
                                 </option>
-                                <option value="Nueva Viscaya">Nueva Viscaya
+                                <option value="Nueva Viscaya">Nueva Viscaya<span class="hidden">7000</span>
                                 </option>
-                                <option value="Isabela">Isabela
+                                <option value="Isabela">Isabela<span class="hidden">8000</span>
                                 </option>
-                                <option value="San Femando">San Femando
+                                <option value="San Femando">San Femando<span class="hidden">4800</span>
                                 </option>
-                                <option value="Porac">Porac
+                                <option value="Porac">Porac<span class="hidden">4800</span>
                                 </option>
-                                <option value="Dinalupihan">Dinalupihan
+                                <option value="Dinalupihan">Dinalupihan<span class="hidden">4800</span>
                                 </option>
-                                <option value="Angeles">Angeles
+                                <option value="Angeles">Angeles<span class="hidden">5500</span>
                                 </option>
-                                <option value="Clark">Clark
+                                <option value="Clark">Clark<span class="hidden">5500</span>
                                 </option>
-                                <option value="Dau">Dau
+                                <option value="Dau">Dau<span class="hidden">5500</span>
                                 </option>
-                                <option value="Tarlac">Tarlac
+                                <option value="Tarlac">Tarlac<span class="hidden">7000</span>
                                 </option>
-                                <option value="Pangasinan">Pangasinan
+                                <option value="Pangasinan">Pangasinan<span class="hidden">8000</span>
                                 </option>
                             </select>
                         </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="form-group1">
                             <label for="time2">TIME:</label>
-                            <input type="number" class="form-control1" id="time2" name="dropoff_time" min="1" max="10">
+                            <input type="text" class="form-control1" id="time2" name="dropoff_time" >
                         </div>
                         <div class="form_group1 comment">
                             <label for="itinerary">ITINERARY:</label>
@@ -170,8 +170,13 @@
                     <div class="book_now">
                         <div>
                             <h6>TOTAL BILLING RATE:</h6>
-                            <div class="btn2">PHP 0000</div>
+                            <p>PHP <span id="price">000</span></p>
+                            <div id="calc" class="btn2">Calculate</div>
                         </div>
+
+                        <input type="hidden" id="vehicle" name="vehicle" value="{{$booking->vehicle}}"/>
+                        <input type="hidden" id="within_metro_manila" name="within_metro_manila" value="{{$booking->within_metro_manila}}"/>
+                        <input type="hidden" id="priceValue" name="price" value="{{$booking->price}}" />
                         <button  class="btn2" type="submit" >book now</button>
                     </div>
                 </form>

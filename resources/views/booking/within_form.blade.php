@@ -81,7 +81,7 @@
                         </div>
                         <div class="form-group1">
                             <label for="time">TIME:</label>
-                            <input type="number" min="1" max="10" class="form-control1" id="time" name="pickup_time">
+                            <input type="text" class="form-control1" id="time" name="pickup_time">
                         </div>
                     </div>
 
@@ -138,11 +138,11 @@
                         </div>
                         <div class="form-group1">
                             <label for="no_of_days">NO. OF DAYS:</label>
-                            <input type="number" class="form-control1" id="no_of_days" name="dropoff_days" min="1">
+                            <input type="number" class="form-control1" id="no_of_days" name="dropoff_days" min="1" value="1">
                         </div>
                         <div class="form-group1">
                             <label for="time2">TIME:</label>
-                            <input type="number" class="form-control1" id="time2" name="dropoff_time" min="1" max="10">
+                            <input type="text" class="form-control1" id="time2" name="dropoff_time">
                         </div>
                         <div class="form_group1 comment">
                             <label for="itinerary">ITINERARY:</label>
@@ -152,8 +152,13 @@
                 <div class="book_now">
                     <div>
                         <h6>TOTAL BILLING RATE:</h6>
-                        <div class="btn2">PHP 0000</div>
+                        <p>PHP <span id="price">000</span></p>
+                        <div id="calc" class="btn2">Calculate</div>
                     </div>
+
+                    <input type="hidden" id="vehicle" name="vehicle" value="{{$booking->vehicle}}"/>
+                    <input type="hidden" id="within_metro_manila" name="within_metro_manila" value="{{$booking->within_metro_manila}}"/>
+                    <input type="hidden" id="priceValue" name="price" value="{{$booking->price}}" />
                     <button type="submit"  class="btn2" >book now</button>
                 </div>
             </form>

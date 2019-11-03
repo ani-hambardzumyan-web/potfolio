@@ -16,6 +16,7 @@ class CreateBookingTable extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('email');
             $table->string('vehicle');
             $table->string('within_metro_manila')->default("yes");
 

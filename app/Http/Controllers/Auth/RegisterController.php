@@ -8,7 +8,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-class RegisterControllerNN extends Controller
+class RegisterController extends Controller
 {
     /*
     |--------------------------------------------------------------------------

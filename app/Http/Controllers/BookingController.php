@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use App\Exports\BookingExport;
 use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
@@ -77,7 +78,7 @@ class BookingController extends Controller
             $booking = new Booking();
         }else{
             $booking = $request->session()->get('booking');
-//            $booking->within_metro_manila = $data['within_metro_manila'];
+            $booking->within_metro_manila = $data['within_metro_manila'];
         }
         $booking->fill($data);
         $request->session()->put('booking', $booking);
@@ -95,7 +96,7 @@ class BookingController extends Controller
     public function selectDetails(Request $request)
     {
         $booking = $request->session()->get('booking');
-        if($booking->within_metro_manila){
+        if($booking->within_metro_manila === "YES"){
             return view('booking.within_form',compact('booking', $booking));
         }else{
             return view('booking.outside_form',compact('booking', $booking));
@@ -118,6 +119,7 @@ class BookingController extends Controller
         }
         //time to add to DB and clear session
         $booking->fill($data);
+        $booking->email = Auth::user()->email;
         $booking->save();
         $request->session()->put('booking', new Booking());
         return redirect('/booking/thanks');

@@ -9,7 +9,6 @@ Route::get('/', function () {
 //});
 
 Auth::routes();
-Auth::routes(['register' => false]);
 
 Route::get('/about', 'AboutController@index')->name('about');
 
