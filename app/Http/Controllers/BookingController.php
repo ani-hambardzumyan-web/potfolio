@@ -62,6 +62,8 @@ class BookingController extends Controller
     public function selectArea(Request $request)
     {
         $booking = $request->session()->get('booking');
+        $booking->within_metro_manila = null;
+        $request->session()->put('booking', $booking);
         return view('booking.select_area',compact('booking', $booking));
     }
 
@@ -73,16 +75,14 @@ class BookingController extends Controller
     public function postArea(Request $request)
     {
         $data = $request->except(['_method', '_token' ]);
-
         if(empty($request->session()->get('booking'))){
             $booking = new Booking();
         }else{
             $booking = $request->session()->get('booking');
-            $booking->within_metro_manila = $data['within_metro_manila'];
         }
+        $booking->within_metro_manila = $data['within_metro_manila'];
         $booking->fill($data);
         $request->session()->put('booking', $booking);
-
         return redirect('/booking/details');
 
     }

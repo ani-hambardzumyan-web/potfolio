@@ -175,6 +175,28 @@ body{
   -ms-user-select: none;
   user-select: none;
 }
+#app .py-4>nav.navbar{
+  position: relative;
+}
+#app nav.navbar button.navbar-togglern{
+  height:0;
+  position: absolute;
+}
+#navbarSupportedContent .navbar-nav.ml-auto li{
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  width:100%;
+  //background: rgb(234, 233, 233);
+  font-family: Neutra_Display, sans-serif;
+  padding:12px 33px 12px;
+}
+#navbarSupportedContent .navbar-nav.ml-auto li *{
+  color: rgb(56, 99, 142)!important;
+}
 /*-- END HOME PAGE--*/
 
 
@@ -197,7 +219,7 @@ body{
   position: relative;
   font-family: Neutra_Display, sans-serif;
   display: inline-block;
-  margin-top: 2%;
+  margin-top: 1.5%;
   text-transform: uppercase;
   font-size: 34px;
   color:rgb(56, 99, 142);
@@ -279,7 +301,7 @@ body{
   padding-bottom:90px;
 }
 .out_of_town form{
-  width:70%;
+  width:100%;
   padding-left: 30px;
 }
 .out_of_town .book_now{
@@ -353,10 +375,10 @@ body{
   font-size: 15px;
   color:#ffffff;
   border:none;
-  padding: 16px 85px;
+  padding: 12px 85px;
   font-weight: 900;
 }
-.book_now a{
+.book_now button{
   margin-top: 40px;
   text-transform: uppercase;
   display: inline-block;
@@ -364,6 +386,12 @@ body{
   color:#ffffff;
   font-size: 18px;
   padding: 2px 44px;
+  border:none;
+  font-family: KozGoPr6N-Heavy, sans-serif;
+}
+.book_now div div{
+  display: inline-block!important;
+  text-transform: uppercase;
 }
 .out_of_town select.form-control1{
   -webkit-appearance: none;

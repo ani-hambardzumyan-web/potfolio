@@ -159,7 +159,7 @@
                     <input type="hidden" id="vehicle" name="vehicle" value="{{$booking->vehicle}}"/>
                     <input type="hidden" id="within_metro_manila" name="within_metro_manila" value="{{$booking->within_metro_manila}}"/>
                     <input type="hidden" id="priceValue" name="price" value="{{$booking->price}}" />
-                    <button type="submit"  class="btn2" >book now</button>
+                    <button type="submit"  class="" >book now</button>
                 </div>
             </form>
                 </div>
